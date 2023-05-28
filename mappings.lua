@@ -20,7 +20,22 @@ return {
     ["<leader>b"] = { name = "Buffers" },
     -- quick save
     -- ["<C-s>"] = { ":w!<cr>", desc = "Save File" },  -- change description but the same command
-  },
+    -- harpoon
+    ["<C-e>"]     = { require("harpoon.ui").toggle_quick_menu },
+    ["<leader>a"] = { require("harpoon.mark").add_file },
+    -- ["C-h"]       = { 
+    --   function() 
+    --     require("harpoon.ui").nav_file(1)
+    --   end,
+    --   desc = "Go to file 1"
+    -- },
+    -- ["C-t"]       = { 
+    --   function() 
+    --     require("harpoon.ui").nav_file(2)
+    --   end,
+    --   desc = "Go to file 2"
+    -- },
+ },
   t = {
     -- setting a mapping to false will disable it
     -- ["<esc>"] = false,
