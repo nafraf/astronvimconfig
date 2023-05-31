@@ -42,6 +42,8 @@ return {
     virtualedit = "block", -- allow going past end of line in visual block mode
     wrap = false, -- Disable wrapping of lines longer than the width of window
     writebackup = false, -- Disable making a backup before overwriting a file
+    colorcolumn = "80", -- Mark column at position 80
+    guicursor = "n-v-c-sm:block,i-ci-ve:hor20,r-cr-o:ver20" --cursor
   },
   g = {
     mapleader = " ", -- sets vim.g.mapleader

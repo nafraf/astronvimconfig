@@ -35,6 +35,11 @@ return {
     --   end,
     --   desc = "Go to file 2"
     -- },
+    -- Center on window after movement
+    ["<C-d>"] = {"<C-d>zz", desc = "Next Paragraph and center"},
+    ["<C-u>"] = {"<C-u>zz", desc = "Prev Paragraph and center"},
+    ["n"] = {"nzzzv", desc = "Next result and center"},
+    ["N"] = {"Nzzzv", desc = "Prev result and center"},
  },
   t = {
     -- setting a mapping to false will disable it
