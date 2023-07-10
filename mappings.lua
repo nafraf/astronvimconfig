@@ -21,8 +21,8 @@ return {
     -- quick save
     -- ["<C-s>"] = { ":w!<cr>", desc = "Save File" },  -- change description but the same command
     -- harpoon
-    ["<C-e>"]     = { require("harpoon.ui").toggle_quick_menu },
-    ["<leader>a"] = { require("harpoon.mark").add_file },
+    ["<C-e>"]     = { require("harpoon.ui").toggle_quick_menu, desc = "harpoon menu" },
+    ["<leader>a"] = { require("harpoon.mark").add_file, desc = "harpoon mark"},
     -- ["C-h"]       = { 
     --   function() 
     --     require("harpoon.ui").nav_file(1)
@@ -38,8 +38,8 @@ return {
     -- Center on window after movement
     ["<C-d>"] = {"<C-d>zz", desc = "Next Paragraph and center"},
     ["<C-u>"] = {"<C-u>zz", desc = "Prev Paragraph and center"},
-    ["n"] = {"nzzzv", desc = "Next result and center"},
-    ["N"] = {"Nzzzv", desc = "Prev result and center"},
+    ["n"]     = {"nzzzv", desc = "Next result and center"},
+    ["N"]     = {"Nzzzv", desc = "Prev result and center"},
  },
   t = {
     -- setting a mapping to false will disable it
